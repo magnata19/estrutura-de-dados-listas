@@ -22,6 +22,8 @@ public class Fila {
                     break;
                 }
             }
+
+            return  primeiroNo;
         } return null;
    }
 
@@ -38,6 +40,7 @@ public class Fila {
                     break;
                 }
             }
+            return  primeiroNo;
         }return null;
    }
 
@@ -52,9 +55,9 @@ public class Fila {
 
         if(refNoEntradaFila != null) {
             while(true) {
-                stringRetorno += "[No { Obeto " + noAuxiliar.getObject() + " }] =>";
+                stringRetorno += "[No { Objeto " + noAuxiliar.getObject() + " }] =>  ";
                 if(noAuxiliar.getRefNo() != null) {
-                    stringRetorno += "null";
+                    stringRetorno += "null  ";
                     noAuxiliar = noAuxiliar.getRefNo();
                 } else {
                     break;
@@ -63,7 +66,6 @@ public class Fila {
         } else {
             stringRetorno = "null";
         }
-
         return stringRetorno;
     }
 }
